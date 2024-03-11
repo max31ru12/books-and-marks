@@ -1,5 +1,10 @@
 https://habr.com/ru/companies/ruvds/articles/599929/
 
+
+CONVENTIONAL COMMENTS: https://conventionalcomments.org/
+
+
+
 УДАЛЕННЫЙ РЕПОЗИТОРИЙ:
 
 git remote add origin <repo_link> 		- связать локальный и удаленный репозитории
@@ -12,6 +17,30 @@ git push --delete origin <branch>		- удалить ветку из удален
 Вручную удаляем или меняем файл, затем:
 1) git add .
 2) git merge --continue
+
+ВНЕСТИ ФАЙЛ В ПОСЛЕДНИЙ КОММИТ
+
+1) git add <files>
+2) git commit --amend --no-edit
+
+
+Git Rebase в Pycharm:
+
+1) git fetch --all
+2) git rebase origin/staiging 		staging - откуда rebase
+# лучше всего сделать squash всех коммитов в один
+
+ОТМЕНИТЬ REBASE
+git rebase --abort
+или
+git reset --soft HEAD~12 (кол-во коммитов)
+
+
+
+
+
+
+КОМАНДЫ
 
 
 1. git merge vetka1 - слить ветку vetka с мастер-веткой
